@@ -1,0 +1,58 @@
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+    min-width: 320px;
+  }
+
+  /*==================== header ====================*/
+
+  .mobile-button-close {
+    margin-right: 40px;
+  }
+
+  .container-mobile-manu {
+    padding-left: 40px;
+  }
+
+  .mobile-tel {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+  }
+
+  .mobile-social-list {
+    margin-top: 48px;
+    gap: 56px;
+  }
+
+  /*==================== hero ====================*/
+  .hero-title {
+    font-size: 36px;
+    line-height: calc(40 / 36);
+  }
+  /* ==================== work ==================== */
+  /* ==================== team ==================== */
+  /* ==================== customers ====================*/
+  /* ==================== footer ==================== */
+  /* ==================== PORTFOLIO ==================== */
+
+  /*================ M O D A L ================*/
+
+  .modal {
+    padding: 24px;
+    width: 408px;
+    min-height: 576px;
+  }
+
+  .modal-title {
+    margin-bottom: 34px;
+  }
+
+  .input-wrap {
+    position: relative;
+  }
+
+  .modal-field-comment {
+    height: 120px;
+  }
+}

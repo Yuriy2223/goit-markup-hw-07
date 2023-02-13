@@ -19,6 +19,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body class="body">
     <header class="header">
@@ -38,6 +41,11 @@
               <a href="" class="header-link link">Contacts</a>
             </li>
           </ul>
+          <button type="button" class="header-button-mobile" data-menu-open>
+            <svg class="header-icon-svg" width="32" height="22">
+              <use href="./images/symbol-defs.svg#icon-manu-svg"></use>
+            </svg>
+          </button>
         </nav>
         <address class="address">
           <ul class="address-list list">
@@ -53,6 +61,94 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-manu is-hidden" data-menu>
+        <div class="container-mobile-manu">
+          <div>
+            <button type="button" class="mobile-button-close" data-menu-close>
+              <svg class="mobile-icon-svg" width="8" height="8">
+                <use
+                  href="./images/symbol-defs.svg#icon-modal-cloze-icon"
+                ></use>
+              </svg>
+            </button>
+            <nav class="navigation-mobail">
+              <ul class="mobile-header-list list">
+                <li class="mobile-header-item">
+                  <a href="./index.html" class="mobile-header-link link"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mobile-header-item">
+                  <a href="./portfolio.html" class="mobile-header-link link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mobile-header-item">
+                  <a href="" class="mobile-header-link current link"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="mobile-address">
+              <ul class="mobile-list list">
+                <li class="mobile-item">
+                  <a href="tel:+110001111111" class="mobile-tel current link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-item">
+                  <a href="mailto:info@devstudio.com" class="mobile-mail link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="mobile-social">
+              <ul class="mobile-social-list list">
+                <li class="mobile-social-item">
+                  <a href="" class="mobile-social-link link">
+                    <svg class="mobile-social-icon" width="16" height="16">
+                      <use
+                        href="./images/symbol-defs.svg#icon-social-1-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-social-item">
+                  <a href="" class="mobile-social-link link"
+                    ><svg class="mobile-social-icon" width="16" height="16">
+                      <use
+                        href="./images/symbol-defs.svg#icon-social-2-twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-social-item">
+                  <a href="" class="mobile-social-link link"
+                    ><svg class="mobile-social-icon" width="16" height="16">
+                      <use
+                        href="./images/symbol-defs.svg#icon-social-3-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-social-item">
+                  <a href="" class="mobile-social-link link"
+                    ><svg class="mobile-social-icon" width="16" height="16">
+                      <use
+                        href="./images/symbol-defs.svg#icon-social-4-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -134,7 +230,11 @@
           <ul class="work-list">
             <li class="work-item">
               <img
-                src="./images/img-1.jpg"
+                srcset="
+                  ./images/web-work/img-1.jpg    1x,
+                  ./images/web-work/img-1-2x.jpg 2x
+                "
+                src="./images/web-work/img-1.jpg"
                 alt="picture"
                 width="360"
                 height="300"
@@ -142,7 +242,11 @@
             </li>
             <li class="work-item">
               <img
-                src="./images/img-2.jpg"
+                srcset="
+                  ./images/web-work/img-2.jpg    1x,
+                  ./images/web-work/img-2-2x.jpg 2x
+                "
+                src="./images/web-work/img-2.jpg"
                 alt="picture"
                 width="360"
                 height="300"
@@ -150,7 +254,11 @@
             </li>
             <li class="work-item">
               <img
-                src="./images/img-3.jpg"
+                srcset="
+                  ./images/web-work/img-3.jpg    1x,
+                  ./images/web-work/img-3-2x.jpg 2x
+                "
+                src="./images/web-work/img-3.jpg"
                 alt="picture"
                 width="360"
                 height="300"
@@ -165,7 +273,11 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                src="./images/img-4.jpg"
+                srcset="
+                  ./images/web-team/img-4.jpg    1x,
+                  ./images/web-team/img-4-2x.jpg 2x
+                "
+                src="./images/web-team/img-4.jpg"
                 alt="photo"
                 width="264"
                 height="260"
@@ -215,7 +327,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-5.jpg"
+                src="./images/web-team/img-5.jpg"
+                srcset="
+                  ./images/web-team/img-5.jpg 1x,
+                  ./images/web-team/img-5.jpg 2x
+                "
                 alt="photo"
                 width="264"
                 height="260"
@@ -265,7 +381,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-6.jpg"
+                src="./images/web-team/img-6.jpg"
+                srcset="
+                  ./images/web-team/img-6.jpg 1x,
+                  ./images/web-team/img-6.jpg 2x
+                "
                 alt="photo"
                 width="264"
                 height="260"
@@ -315,7 +435,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-7.jpg"
+                srcset="
+                  ./images/web-team/img-7.jpg 1x,
+                  ./images/web-team/img-7.jpg 2x
+                "
+                src="./images/web-team/img-7.jpg"
                 alt="photo"
                 width="264"
                 height="260"
@@ -593,5 +717,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
