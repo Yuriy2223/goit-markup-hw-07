@@ -125,6 +125,7 @@
   }
 
   .hero-title {
+    width: 496px;
     font-size: 56px;
     line-height: calc(60 / 56);
     margin-bottom: 40px;
@@ -201,111 +202,24 @@
   }
 
   /* ==================== PORTFOLIO ==================== */
-  /*
-  button:hover,
-  button:focus {
-    color: var(--white-color);
-    background-color: #404bbf;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-color: #404bbf;
-  }
-
-  button {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
   .concept {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding-top: 64px;
+    padding-bottom: 96px;
   }
 
   .concept-button-list {
     justify-content: center;
-    display: flex;
     gap: 24px;
-    margin-bottom: 72px;
+    margin-bottom: 64px;
   }
 
-  .concept-button-all {
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--button-blue-color);
-    border: 1px var(--light-grey-color);
-    border-radius: 4px;
-    padding: 12px 24px;
-  }
-
-  .concept-button-website {
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--button-blue-color);
-    border: 1px var(--light-grey-color);
-    border-radius: 4px;
-    padding: 12px 24px;
-  }
-
-  .concept-button-app {
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--button-blue-color);
-    border: 1px var(--light-grey-color);
-    border-radius: 4px;
-    padding: 12px 24px;
-  }
-
-  .concept-button-design {
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--button-blue-color);
-    border: 1px var(--light-grey-color);
-    border-radius: 4px;
-    padding: 12px 24px;
-  }
-
+  .concept-button-all,
+  .concept-button-website,
+  .concept-button-app,
+  .concept-button-design,
   .concept-button-marketing {
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--button-blue-color);
-    border: 1px var(--light-grey-color);
-    border-radius: 4px;
     padding: 12px 24px;
-  }
-
-  .button-title {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
   }
 
   .concept-list {
@@ -314,72 +228,13 @@
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-  }
-
-  .concept-item-img-text {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .concept-item-img-text-text {
-    position: absolute;
-    top: 0;
-    font-size: 16px;
-    line-height: calc(24 / 16);
-    letter-spacing: 0.02em;
-    color: var(--milk-color);
-    background-color: var(--blue-color);
-    padding: 40px 32px 0;
-    height: 100%;
-    transform: translateY(101%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: auto;
-  }
-
-  .concept-item:hover .concept-item-img-text-text {
-    transform: translateY(0);
+    justify-content: start;
   }
 
   .concept-item {
-    flex-basis: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 24px) / 2);
   }
 
-  .concept-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--black-color);
-  }
-
-  .concept-text {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    margin-top: 8px;
-    color: #434455;
-  }
-
-  .concept-item-h2-p {
-    background: var(--white-color);
-    border-top-width: 0;
-    border-right-width: 1px;
-    border-right-color: var(--light-grey-color);
-    border-bottom-width: 1px;
-    border-bottom-color: var(--light-grey-color);
-    border-left-width: 1px;
-    border-left-color: var(--light-grey-color);
-    border-style: solid;
-    padding: 32px 16px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .concept-list .concept-item:hover .concept-item-h2-p {
-    border-color: var(--milk-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  }
-     */
   /*================ M O D A L ================*/
 
   .modal {

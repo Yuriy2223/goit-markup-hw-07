@@ -27,6 +27,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 :root {
@@ -94,6 +96,8 @@ body {
 .header-button-mobile:hover,
 .header-button-mobile:focus {
   stroke: var(--button-blue-color);
+  background: var(--white-color);
+  box-shadow: none;
 }
 
 .header-button-mobile {
@@ -110,10 +114,10 @@ body {
 }
 
 .container-mobile-manu {
-  max-width: 428px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 20px;
+  max-width: 320px;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -136,7 +140,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 28px;
   margin-bottom: 16px;
 }
 
@@ -255,6 +259,7 @@ body {
     url(../images/web-hero/webstudio-fons-mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -270,10 +275,15 @@ body {
   }
 }
 
-.hero-title {
-  font-size: 32px;
-  line-height: calc(40 / 32);
+.hero-container {
   text-align: center;
+}
+
+.hero-title {
+  width: 285px;
+  display: inline-block;
+  font-size: 30px;
+  line-height: calc(38 / 30);
   letter-spacing: 0.02em;
   color: var(--white-color);
   margin-bottom: 72px;
@@ -652,89 +662,16 @@ button {
 }
 
 /* ==================== PORTFOLIO ==================== */
-/*
+
 .header-portfolio {
   border-bottom: 1px solid var(--light-grey-color);
-  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .concept {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
-
-.concept-button-list {
-  justify-content: center;
-  display: flex;
-  gap: 24px;
-  margin-bottom: 72px;
-}
-
-.concept-button-all {
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--button-blue-color);
-  border: 1px var(--light-grey-color);
-  border-radius: 4px;
-  padding: 12px 24px;
-}
-
-.concept-button-website {
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--button-blue-color);
-  border: 1px var(--light-grey-color);
-  border-radius: 4px;
-  padding: 12px 24px;
-}
-
-.concept-button-app {
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--button-blue-color);
-  border: 1px var(--light-grey-color);
-  border-radius: 4px;
-  padding: 12px 24px;
-}
-
-.concept-button-design {
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--button-blue-color);
-  border: 1px var(--light-grey-color);
-  border-radius: 4px;
-  padding: 12px 24px;
-}
-
-.concept-button-marketing {
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--button-blue-color);
-  border: 1px var(--light-grey-color);
-  border-radius: 4px;
-  padding: 12px 24px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .button-title {
@@ -750,12 +687,37 @@ button {
   margin: -1px;
 }
 
+.concept-button-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 24px;
+  margin-bottom: 48px;
+}
+
+.concept-button-all,
+.concept-button-website,
+.concept-button-app,
+.concept-button-design,
+.concept-button-marketing {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--button-blue-color);
+  border: 1px var(--light-grey-color);
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
 .concept-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px;
 }
 
 .concept-item-img-text {
@@ -780,10 +742,6 @@ button {
 
 .concept-item:hover .concept-item-img-text-text {
   transform: translateY(0);
-}
-
-.concept-item {
-  flex-basis: calc((100% - 48px) / 3);
 }
 
 .concept-subtitle {
@@ -822,7 +780,7 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
- /*================ M O D A L ================*/
+/*================ M O D A L ================*/
 
 .backdrop {
   position: fixed;

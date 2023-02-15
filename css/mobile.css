@@ -11,6 +11,9 @@
   }
 
   .container-mobile-manu {
+    max-width: 428px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 40px;
   }
 
@@ -26,15 +29,36 @@
   }
 
   /*==================== hero ====================*/
+
   .hero-title {
+    width: 320px;
     font-size: 36px;
     line-height: calc(40 / 36);
   }
+
   /* ==================== work ==================== */
   /* ==================== team ==================== */
   /* ==================== customers ====================*/
   /* ==================== footer ==================== */
   /* ==================== PORTFOLIO ==================== */
+
+  .concept-button-list {
+    gap: 24px;
+    margin-left: 20px;
+  }
+
+  .concept-button-all,
+  .concept-button-website,
+  .concept-button-app,
+  .concept-button-design,
+  .concept-button-marketing {
+    padding: 12px 24px;
+  }
+
+  .concept-list {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
 
   /*================ M O D A L ================*/
 
